@@ -5,7 +5,7 @@ $posts = array(
     'description' => 'Não perca a grande festa no parque amanhã! Teremos música ao vivo, comida e muita diversão para toda a família.',
     'image' => 'http://example.com/images/park-party.jpg',
     'link' => 'http://example.com/park-party',
-    'date' => '2023-05-15'
+    'date' => date("m.d.y")
   ),
   array(
     'title' => 'Promoção da semana',
