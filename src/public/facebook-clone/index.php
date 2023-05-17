@@ -514,7 +514,7 @@
                       ?>
                     </p>
                   </div>
-                  <?php 
+                  <?php
                     };
                   ?>
                   <div class="w-full flex flex-col space-y-2 p-2 px-4">

@@ -147,5 +147,55 @@
     ?>
     <br>
     Olá! <?php echo $mensagem; ?>
+    <br>
+    <?php
+        $tamanhoString = strlen('PHP');
+        echo 'Tamanho da string PHP = ' . $tamanhoString;
+    ?>
+    <br>
+    <p>Função Olá:</p>
+    <?php 
+        function strconcat($palavra1, $palavra2) {
+            return $palavra1 . $palavra2;
+        }
+        echo strconcat('Olá', ' Mundo!');
+    ?>
+    <br>
+    <?php 
+        $a = 3;
+        function teste() {
+            // $a += 2;
+        };
+        teste();
+        echo $a;
+    ?>
+    <br>
+    <?php
+        function contador() {
+            static $total = 0;
+            return $total++;
+        };
+        for ($i = 1; $i <= 5; $i++) {
+            echo contador();
+        };
+    ?>
+    <br>
+    <?php 
+        function dobro(&$numero) {
+            $numero = $numero * 2;
+        };
+        $a = 4;
+        dobro($a);
+        echo $a;
+    ?>
+    <br>
+    <?php 
+        function pagamento($desconto=2) {
+            echo 'O desconto foi de: ' . $desconto . '%';
+        };
+        pagamento();
+    ?>
+
+
     </body>
 </html>
