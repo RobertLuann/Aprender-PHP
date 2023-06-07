@@ -1,10 +1,14 @@
+<?php 
+    session_start();
+    $_SESSION['hits'] = $_SESSION['hits'] + 1; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoping mt incrivel</title>
+    <title>Shopping mt incrivel</title>
 </head>
 <body>
     <?php 
@@ -24,9 +28,12 @@
         ?>
         <strong> <?php echo $cupom; ?></strong>
         <img src="" alt="">
+        <br>
         <?php } else { ?>
         <input type="text" name="cupom"><input type="submit" value="Enviar">
-        <?php }; ?>
+        <?php }; 
+            echo 'Esta página foi visualizada ' . $_SESSION['hits'] . ' vezes.';
+        ?>
     </form>
 </body>
 </html>
