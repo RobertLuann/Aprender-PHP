@@ -12,7 +12,9 @@ if (!$_SESSION['sessao']) header('Location: login.php');
     <title>Saldo</title>
 </head>
 <body>
+
     <h1>Usuário: <?php echo $_SESSION['user']; ?></h1>
+    <?php ?>
     <h1>Saldo: R$400.00</h1>
     <a href="sair.php">Sair</a>
 </body>
